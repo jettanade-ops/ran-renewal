@@ -2,6 +2,9 @@ html, body {
     font-family: 'Kanit', sans-serif; 
     background-color: #0F111A; 
     color: #F3F4F6;
+    -webkit-user-select: none; /* ห้ามคลุมดำข้อความและรูปภาพ */
+    -ms-user-select: none;
+    user-select: none;
 }
 
 * {
