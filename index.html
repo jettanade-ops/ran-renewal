@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="th" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAN RENEWAL : Premium Classic</title>
+    <style>
+      html, body { background-color: #0F111A !important; color: #F3F4F6 !important; }
+      #navbar {
+        background-color: rgba(15, 17, 26, 0.3);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+      }
+    </style>
+    <link rel="icon" type="image/png" href="./assets/avatar.png" />
+    <link rel="apple-touch-icon" href="./assets/avatar.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Kanit:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Configuration -->
+    <script src="./js/tailwind-config.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body
+    style="background-color: #0F111A;"
+    class="antialiased overflow-x-hidden selection:bg-ran-gold selection:text-black scroll-smooth"
+  >
+    <main class="w-full relative overflow-x-hidden">
+      <header
+        class="fixed top-0 w-full z-50 glass-panel py-4 px-6 md:px-12 flex justify-between items-center"
+        id="navbar"
+      >
+        <div class="flex items-center gap-3 cursor-pointer group">
+          <!-- Avatar Icon -->
+          <div
+            class="w-8 h-8 md:w-10 md:h-10 rounded-md flex items-center justify-center border border-[#d4af37] overflow-hidden relative shadow-[0_0_8px_rgba(212,175,55,0.15)] group-hover:shadow-[0_0_12px_rgba(212,175,55,0.3)] transition-all duration-300 bg-black"
+          >
+            <img src="./assets/avatar.png" alt="Avatar" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+            <!-- Inner shadow to make the border pop without being too heavy -->
+            <div class="absolute inset-0 shadow-[inset_0_0_4px_rgba(0,0,0,0.6)] pointer-events-none"></div>
+          </div>
+          
+          <!-- Logo Text (Premium Refined) -->
+          <div class="flex items-center gap-1 md:gap-2 relative" style="filter: drop-shadow(0 2px 2px #000) drop-shadow(0 0 4px rgba(212,175,55,0.2));">
+            <span
+              class="font-cinzel text-lg md:text-[20px] font-bold tracking-[0.1em] text-transparent bg-clip-text bg-gradient-to-b from-[#fffae6] via-[#f59e0b] to-[#92400e] pr-0.5"
+            >
+              RAN
+            </span>
+            
+            <div class="relative flex items-center justify-center w-1.5 h-1.5 mx-0.5 mt-0.5">
+              <div class="absolute inset-0 bg-red-600 rounded-full blur-[1px]"></div>
+              <div class="w-1.5 h-1.5 rounded-full border border-red-500 bg-transparent relative z-10"></div>
+            </div>
+            
+            <span
+              class="font-cinzel text-lg md:text-[20px] font-bold tracking-[0.1em] text-transparent bg-clip-text bg-gradient-to-b from-[#fffae6] via-[#f59e0b] to-[#92400e] pl-0.5"
+            >
+              RENEWAL
+            </span>
+          </div>
+        </div>
+
+        <nav
+          class="hidden font-prompt md:flex gap-20 text-sm text-gray-300 tracking-wide"
+        >
+          <a
+            href="#"
+            class="nav-link hover:text-white relative transition-colors"
+          >
+            หน้าหลัก
+          </a>
+          <a
+            href="#news"
+            class="nav-link hover:text-white relative transition-colors"
+          >
+            ข่าวสาร
+          </a>
+          <a
+            href="#events"
+            class="nav-link hover:text-white relative transition-colors"
+          >
+            กิจกรรม
+          </a>
+          <a
+            href="download.html"
+            class="nav-link hover:text-white relative transition-colors"
+          >
+            ดาวน์โหลด
+          </a>
+        </nav>
+
+        <button
+          class="hidden md:flex bg-ran-gold text-black px-6 py-2 text-sm font-bold tracking-wide btn-gold items-center gap-2 rounded-md transform hover:scale-105 transition-all"
+        >
+          เติมเงิน
+        </button>
+      </header>
+
+      <!-- Hero Section (Antigravity Design) -->
+      <section
+        style="background-color: #0F111A;"
+        class="relative min-h-[90vh] md:min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-cover bg-center bg-no-repeat bg-hero"
+      >
+        <!-- Overlay made highly contrasted -->
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-[#0a0f18]/80 via-[#0a0f18]/40 to-[#0a0f18] z-0 pointer-events-none"
+        ></div>
+
+        <!-- Floating Particles Effect -->
+        <div id="particles-container" class="absolute inset-0 z-0 pointer-events-none overflow-hidden mix-blend-screen"></div>
+
+        <!-- Antigravity Ambient Glow Orbs -->
+        <div
+          class="absolute top-1/4 left-1/4 w-[250px] md:w-[400px] h-[250px] md:h-[400px] bg-blue-600/30 rounded-full blur-[100px] mix-blend-screen animate-pulse-glow z-0 pointer-events-none"
+        ></div>
+        <div
+          class="absolute bottom-1/4 right-1/4 w-[200px] md:w-[300px] h-[200px] md:h-[300px] bg-ran-gold/20 rounded-full blur-[100px] mix-blend-screen animate-pulse-glow z-0 pointer-events-none"
+          style="animation-delay: 1s"
+        ></div>
+
+        <!-- Spinning Rings -->
+        <div
+          class="absolute w-[350px] h-[350px] md:w-[700px] md:h-[700px] border border-white/5 rounded-full z-0 flex items-center justify-center animate-spin-slow pointer-events-none"
+        >
+          <div
+            class="w-[250px] h-[250px] md:w-[550px] md:h-[550px] border border-ran-gold/20 rounded-full border-dashed animate-spin-slow-reverse"
+          ></div>
+          <!-- Orbiting nodes -->
+          <div
+            class="absolute w-1.5 h-1.5 rounded-full bg-ran-gold shadow-[0_0_15px_#FACC15] top-0 left-1/2 -translate-x-1/2"
+          ></div>
+          <div
+            class="absolute w-2 h-2 rounded-full bg-blue-400 shadow-[0_0_20px_#60A5FA] bottom-[15%] left-[15%]"
+          ></div>
+          <div
+            class="absolute w-1 h-1 rounded-full bg-white shadow-[0_0_10px_#FFF] top-[15%] right-[15%]"
+          ></div>
+        </div>
+
+        <!-- Floating Content Container (Integrated smoothly with background) -->
+        <div
+          class="relative z-10 flex flex-col items-center text-center px-4 md:px-16 py-12 max-w-5xl mx-auto mt-10 group"
+        >
+          <!-- Soft blur for legibility without hard borders -->
+          <div
+            class="absolute inset-0 bg-black/50 blur-[100px] rounded-full pointer-events-none -z-10"
+          ></div>
+
+          <!-- 3rd Anniversary Badge -->
+          <div
+            class="inline-flex items-center gap-3 text-ran-gold mb-8 font-cinzel text-xs md:text-sm tracking-[0.4em] uppercase border border-ran-gold/30 bg-ran-gold/10 px-6 py-2 rounded-full shadow-[0_0_20px_rgba(250,204,21,0.15)] relative z-10 transition-transform duration-500 hover:scale-105 animate-premium-reveal"
+          >
+            <span
+              class="w-1.5 h-1.5 rotate-45 bg-ran-gold shadow-[0_0_5px_#FACC15]"
+            ></span>
+            Premium Classic
+            <span
+              class="w-1.5 h-1.5 rotate-45 bg-ran-gold shadow-[0_0_5px_#FACC15]"
+            ></span>
+          </div>
+
+          <h1
+            class="font-cinzel text-6xl md:text-8xl font-black tracking-widest leading-none mb-4 relative z-10 animate-premium-reveal premium-delay-150"
+          >
+            <!-- Central intense glow -->
+            <span
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-ran-gold/10 blur-[60px] rounded-full -z-10 group-hover:bg-ran-gold/20 transition-colors duration-700 pointer-events-none"
+            ></span>
+
+            <span
+              class="relative text-transparent bg-clip-text bg-gradient-to-b from-[#FACC15] to-[#A16207] drop-shadow-[0_0_15px_rgba(250,204,21,0.5)]"
+            >
+              RAN
+            </span>
+            <span
+              class="relative text-transparent bg-clip-text bg-gradient-to-b from-white to-[#9CA3AF] drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]"
+            >
+              RENEWAL
+            </span>
+          </h1>
+
+          <h2
+            class="font-cinzel text-sm md:text-2xl tracking-[0.6em] text-gray-300 md:tracking-[0.8em] mb-10 uppercase drop-shadow-[0_0_10px_rgba(255,255,255,0.2)] animate-premium-reveal premium-delay-300"
+          >
+            The Premium Adventure
+          </h2>
+
+          <p
+            class="font-prompt text-gray-300 text-sm md:text-base mb-12 max-w-[650px] font-light leading-relaxed tracking-wide drop-shadow-md opacity-90 relative z-10 animate-premium-reveal premium-delay-450"
+          >
+            ยกระดับประสบการณ์
+            <span class="text-ran-gold font-medium">
+              ร่วมสร้างมหาตำนานในรูปแบบคลาสสิค
+            </span>
+            สัมผัสความตื่นเต้นกับกราฟิกขั้นสุดในรูปแบบพรีเมียม
+          </p>
+
+          <div
+            class="flex flex-col md:flex-row gap-6 w-full md:w-auto px-4 md:px-0 relative z-10 animate-premium-reveal premium-delay-600"
+          >
+            <button
+              onclick="window.location.href='download.html'"
+              class="flex-1 md:flex-none btn-gold text-black px-12 py-4 flex items-center justify-center gap-3 rounded-lg group border border-[#FDE047] relative overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_rgba(250,204,21,0.6)] hover:-translate-y-1"
+            >
+              <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <div
+                  class="absolute top-0 h-full w-[40%] bg-gradient-to-r from-transparent via-white to-transparent opacity-40 animate-sweep mix-blend-overlay"
+                ></div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="relative z-10"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span class="font-bold uppercase tracking-[0.2em] relative z-10">
+                Download
+              </span>
+            </button>
+            <button
+              class="flex-1 md:flex-none text-white hover:text-ran-gold py-4 px-12 flex items-center justify-center gap-3 tracking-[0.2em] rounded-lg bg-white/5 border border-white/20 hover:border-ran-gold hover:bg-white/10 backdrop-blur-md shadow-[0_0_15px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_rgba(250,204,21,0.3)] transition-all duration-300 hover:-translate-y-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span class="uppercase font-medium text-sm text-center">
+                Facebook page
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Premium Separator Transition -->
+      <div
+        class="relative w-full h-24 flex items-center justify-center -my-12 z-30 pointer-events-none"
+      >
+        <!-- Blending gradient background to smooth out the hard cut -->
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-[#0F111A] via-transparent to-[#161925] opacity-80"
+        ></div>
+
+        <!-- Glowing Faded Line -->
+        <div
+          class="w-full max-w-7xl h-[2px] bg-gradient-to-r from-transparent via-ran-gold/30 to-transparent absolute top-1/2 overflow-hidden shadow-[0_0_15px_rgba(250,204,21,0.3)]"
+        >
+          <div
+            class="absolute top-0 h-full w-[20%] bg-gradient-to-r from-transparent via-ran-gold to-transparent opacity-80 animate-sweep shadow-[0_0_15px_#FACC15]"
+          ></div>
+        </div>
+
+        <!-- Middle glowing design -->
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-3"
+        >
+          <!-- Left Long Fade Dash -->
+          <div class="w-12 md:w-24 h-[1px] bg-gradient-to-l from-ran-gold to-transparent shadow-[0_0_10px_#FACC15]"></div>
+
+          <!-- Left Hollow Diamond -->
+          <div
+            class="w-2.5 h-2.5 rotate-45 border-[1px] border-ran-gold shadow-[0_0_8px_#FACC15]"
+          ></div>
+
+          <!-- Center Glowing Diamond -->
+          <div class="relative flex items-center justify-center">
+            <div
+              class="absolute inset-0 bg-ran-gold blur-[12px] opacity-60 rounded-full animate-pulse-glow"
+            ></div>
+            <div
+              class="w-4 h-4 rotate-45 border-[1.5px] border-ran-gold bg-[#0F111A] flex items-center justify-center relative z-10 shadow-[0_0_15px_rgba(250,204,21,0.5)]"
+            >
+              <div
+                class="w-1.5 h-1.5 bg-ran-gold shadow-[0_0_8px_#FACC15]"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Right Hollow Diamond -->
+          <div
+            class="w-2.5 h-2.5 rotate-45 border-[1px] border-ran-gold shadow-[0_0_8px_#FACC15]"
+          ></div>
+
+          <!-- Right Long Fade Dash -->
+          <div class="w-12 md:w-24 h-[1px] bg-gradient-to-r from-ran-gold to-transparent shadow-[0_0_10px_#FACC15]"></div>
+        </div>
+      </div>
+
+      <!-- News Layer -->
+      <section
+        id="news"
+        class="py-20 md:py-32 px-6 md:px-12 relative z-10 bg-ran-section-alt"
+      >
+        <div class="max-w-7xl mx-auto relative z-10">
+          <div
+            class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+          >
+            <div
+              class="relative pl-5 md:pl-8 border-l-[3px] border-ran-gold/40"
+            >
+              <!-- Large subtle background text -->
+              <span
+                class="absolute -top-10 -left-2 md:-top-16 md:-left-4 text-[70px] md:text-[110px] font-cinzel font-black pointer-events-none select-none text-transparent bg-clip-text bg-gradient-to-b from-white/[0.05] to-transparent"
+              >
+                NEWS
+              </span>
+
+              <!-- Main Header -->
+              <h2
+                class="font-cinzel text-4xl md:text-5xl font-black mb-3 tracking-[0.15em] drop-shadow-lg uppercase relative z-10 flex flex-wrap gap-x-4"
+              >
+                <span
+                  class="text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]"
+                >
+                  LATEST
+                </span>
+                <span
+                  class="text-transparent bg-clip-text bg-gradient-to-b from-[#FACC15] via-[#EAB308] to-[#854d0e] drop-shadow-[0_2px_15px_rgba(250,204,21,0.4)]"
+                >
+                  UPDATES
+                </span>
+              </h2>
+
+              <!-- Subtitle with accent line -->
+              <div class="flex items-center gap-3 relative z-10">
+                <div
+                  class="w-1.5 h-1.5 rotate-45 bg-ran-gold shadow-[0_0_5px_#FACC15]"
+                ></div>
+                <p
+                  class="text-gray-300 text-sm md:text-base font-light font-prompt tracking-[0.05em]"
+                >
+                  ติดตามข่าวสารการอัปเดต และเรื่องราวต่างๆภายในเซิฟเวอร์
+                </p>
+              </div>
+            </div>
+            <!-- <a href="#" class="text-xs text-ran-gold-dark hover:text-ran-gold transition-all duration-300 inline-flex items-center gap-2 uppercase tracking-widest font-cinzel border border-ran-gold-dark/30 hover:border-ran-gold px-6 py-2 rounded-md bg-white/5 hover:bg-ran-gold/10 hover:shadow-[0_0_20px_rgba(250,204,21,0.5)]">
+                View Archive <span>&rarr;</span>
+            </a> -->
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <a
+              href="#"
+              class="block group rounded-xl overflow-hidden bg-ran-card shadow-lg hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] relative hover:z-20 hover:-translate-y-2 transition-all duration-300 border border-white/5 hover:border-blue-500"
+            >
+              <div class="relative h-48 overflow-hidden">
+                <img
+                  src="./assets/card_news_1774046502289.png"
+                  alt="News 1"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div
+                  class="absolute top-3 right-3 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 tracking-wider rounded uppercase shadow-md"
+                >
+                  Notice
+                </div>
+              </div>
+              <div class="p-6">
+                <p
+                  class="text-[11px] text-ran-gold mb-2 font-prompt tracking-wider uppercase"
+                >
+                  20 Dec 2026
+                </p>
+                <h3
+                  class="text-base font-medium text-white group-hover:text-blue-400 transition-colors line-clamp-2 leading-relaxed font-prompt"
+                >
+                  แจ้งข่าว : รอการแจ้งอัพเดตเร็วๆนี้
+                </h3>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="block group rounded-xl overflow-hidden bg-ran-card shadow-lg hover:shadow-[0_0_30px_rgba(96,165,250,0.6)] relative hover:z-20 hover:-translate-y-2 transition-all duration-300 border border-white/5 hover:border-blue-400"
+            >
+              <div class="relative h-48 overflow-hidden">
+                <img
+                  src="./assets/card_news_1774046502289.png"
+                  alt="News 2"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 hue-rotate-[90deg]"
+                />
+                <div
+                  class="absolute top-3 right-3 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 tracking-wider rounded uppercase shadow-md"
+                >
+                  Notice
+                </div>
+              </div>
+              <div class="p-6">
+                <p
+                  class="text-[11px] text-ran-gold mb-2 font-prompt tracking-wider uppercase"
+                >
+                  07 Dec 2026
+                </p>
+                <h3
+                  class="text-base font-medium text-white group-hover:text-blue-400 transition-colors line-clamp-2 leading-relaxed font-prompt"
+                >
+                  แจ้งข่าว : รอการแจ้งอัพเดตเร็วๆนี้
+                </h3>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="block group rounded-xl overflow-hidden bg-ran-card shadow-lg hover:shadow-[0_0_30px_rgba(192,132,252,0.6)] relative hover:z-20 hover:-translate-y-2 transition-all duration-300 border border-white/5 hover:border-purple-400"
+            >
+              <div class="relative h-48 overflow-hidden">
+                <img
+                  src="./assets/card_news_1774046502289.png"
+                  alt="News 3"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 hue-rotate-180"
+                />
+                <div
+                  class="absolute top-3 right-3 bg-purple-600 text-white text-[10px] font-bold px-3 py-1 tracking-wider rounded uppercase shadow-md"
+                >
+                  Patch
+                </div>
+              </div>
+              <div class="p-6">
+                <p
+                  class="text-[11px] text-ran-gold mb-2 font-prompt tracking-wider uppercase"
+                >
+                  06 Dec 2026
+                </p>
+                <h3
+                  class="text-base font-medium text-white group-hover:text-purple-400 transition-colors line-clamp-2 leading-relaxed font-prompt"
+                >
+                  อัพเดต : รอการแจ้งอัพเดตเร็วๆนี้
+                </h3>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="block group rounded-xl overflow-hidden bg-ran-card shadow-lg hover:shadow-[0_0_30px_rgba(250,204,21,0.6)] relative hover:z-20 hover:-translate-y-2 transition-all duration-300 border border-white/5 hover:border-ran-gold"
+            >
+              <div class="relative h-48 overflow-hidden">
+                <img
+                  src="./assets/card_news_1774046502289.png"
+                  alt="News 4"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 sepia"
+                />
+                <div
+                  class="absolute top-3 right-3 bg-ran-gold text-black text-[10px] font-bold px-3 py-1 tracking-wider rounded uppercase shadow-md"
+                >
+                  Event
+                </div>
+              </div>
+              <div class="p-6">
+                <p
+                  class="text-[11px] text-ran-gold mb-2 font-prompt tracking-wider uppercase"
+                >
+                  05 Dec 2026
+                </p>
+                <h3
+                  class="text-base font-medium text-white group-hover:text-ran-gold transition-colors line-clamp-2 leading-relaxed font-prompt"
+                >
+                  อัพเดต : รอการแจ้งอัพเดตเร็วๆนี้
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Premium Separator Transition (News to Events) -->
+      <div
+        class="relative w-full h-24 flex items-center justify-center -my-12 z-30 pointer-events-none"
+      >
+        <!-- Blending gradient background to smooth out the hard cut -->
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-[#161925] via-transparent to-[#1A1625] opacity-80"
+        ></div>
+
+        <!-- Glowing Faded Line -->
+        <div
+          class="w-full max-w-7xl h-[2px] bg-gradient-to-r from-transparent via-ran-gold/30 to-transparent absolute top-1/2 overflow-hidden shadow-[0_0_15px_rgba(250,204,21,0.3)]"
+        >
+          <div
+            class="absolute top-0 h-full w-[20%] bg-gradient-to-r from-transparent via-ran-gold to-transparent opacity-80 animate-sweep shadow-[0_0_15px_#FACC15]"
+          ></div>
+        </div>
+
+        <!-- Middle glowing design -->
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-3"
+        >
+          <!-- Left Long Fade Dash -->
+          <div class="w-12 md:w-24 h-[1px] bg-gradient-to-l from-ran-gold to-transparent shadow-[0_0_10px_#FACC15]"></div>
+
+          <!-- Left Hollow Diamond -->
+          <div
+            class="w-2.5 h-2.5 rotate-45 border-[1px] border-ran-gold shadow-[0_0_8px_#FACC15]"
+          ></div>
+
+          <!-- Center Glowing Diamond -->
+          <div class="relative flex items-center justify-center">
+            <div
+              class="absolute inset-0 bg-ran-gold blur-[12px] opacity-60 rounded-full animate-pulse-glow"
+            ></div>
+            <div
+              class="w-4 h-4 rotate-45 border-[1.5px] border-ran-gold bg-[#0F111A] flex items-center justify-center relative z-10 shadow-[0_0_15px_rgba(250,204,21,0.5)]"
+            >
+              <div
+                class="w-1.5 h-1.5 bg-ran-gold shadow-[0_0_8px_#FACC15]"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Right Hollow Diamond -->
+          <div
+            class="w-2.5 h-2.5 rotate-45 border-[1px] border-ran-gold shadow-[0_0_8px_#FACC15]"
+          ></div>
+
+          <!-- Right Long Fade Dash -->
+          <div class="w-12 md:w-24 h-[1px] bg-gradient-to-r from-ran-gold to-transparent shadow-[0_0_10px_#FACC15]"></div>
+        </div>
+      </div>
+
+      <!-- Events Section (Contrasting background) -->
+      <section
+        id="events"
+        class="py-24 md:py-32 px-6 md:px-12 relative z-10 bg-[#1A1625] overflow-hidden"
+      >
+        <!-- Faint gradient overlay -->
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-ran-bg to-transparent z-0 pointer-events-none"
+        ></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+          <div class="text-center mb-16 relative flex flex-col items-center">
+            <!-- Large subtle background text -->
+            <span
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[60%] text-[70px] md:text-[110px] font-cinzel font-black pointer-events-none select-none text-transparent bg-clip-text bg-gradient-to-b from-white/[0.05] to-transparent z-0"
+            >
+              EVENTS
+            </span>
+
+            <div class="relative z-10 flex flex-col items-center">
+              <span class="diamond mb-6 shadow-[0_0_10px_#FACC15]"></span>
+              <h2
+                class="font-cinzel text-4xl md:text-5xl font-black mb-4 tracking-[0.15em] drop-shadow-lg uppercase flex flex-wrap justify-center gap-x-4"
+              >
+                <span
+                  class="text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]"
+                >
+                  EXCLUSIVE
+                </span>
+                <span
+                  class="text-transparent bg-clip-text bg-gradient-to-b from-[#FACC15] via-[#EAB308] to-[#854d0e] drop-shadow-[0_2px_15px_rgba(250,204,21,0.4)]"
+                >
+                  EVENTS
+                </span>
+              </h2>
+              <div
+                class="w-24 h-[1px] bg-gradient-to-r from-transparent via-ran-gold to-transparent mb-5 opacity-70"
+              ></div>
+              <p
+                class="text-gray-300 text-sm md:text-base font-light font-prompt tracking-[0.05em] max-w-2xl mx-auto"
+              >
+                พบกับกิจกรรมสุดเอ็กซ์คลูซีฟและภารกิจท้าทายเพื่อรับรางวัลมากมาย
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Event cards brightened -->
+            <div class="group cursor-pointer">
+              <div
+                class="relative h-72 rounded-2xl overflow-hidden border border-white/10 group-hover:border-ran-gold transition-all duration-500 shadow-xl group-hover:shadow-[0_0_30px_rgba(250,204,21,0.6)] group-hover:z-20 z-10"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-[#1A1625] via-transparent to-transparent z-10 opacity-90 group-hover:opacity-70 transition-opacity"
+                ></div>
+                <img
+                  src="./assets/card_news_1774046502289.png"
+                  alt="Event 1"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 saturate-150"
+                />
+                <div class="absolute top-4 left-4 z-20 flex gap-2">
+                  <span
+                    class="bg-red-500 text-[10px] text-white font-bold px-3 py-1 rounded shadow-lg animate-pulse"
+                  >
+                    HOT
+                  </span>
+                </div>
+                <div
+                  class="absolute bottom-0 left-0 w-full p-6 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform"
+                >
+                  <h3
+                    class="font-prompt text-lg font-bold text-white mb-2 leading-tight drop-shadow-md"
+                  >
+                    RAN RENEWAL CLASSIC BETA TEST 2026
+                  </h3>
+                  <div
+                    class="flex items-center gap-2 text-xs text-ran-gold font-prompt font-semibold uppercase tracking-widest bg-black/40 px-3 py-1.5 rounded w-max backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <span>เข้าร่วมกิจกรรม</span>
+                    <span>&rarr;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group cursor-pointer">
+              <div
+                class="relative h-72 rounded-2xl overflow-hidden border border-white/10 group-hover:border-ran-gold transition-all duration-500 shadow-xl group-hover:shadow-[0_0_30px_rgba(250,204,21,0.6)] group-hover:z-20 z-10"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-[#1A1625] via-transparent to-transparent z-10 opacity-90 group-hover:opacity-70 transition-opacity"
+                ></div>
+                <img
+                  src="./assets/card_news_1774046502289.png"
+                  alt="Event 2"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 saturate-150"
+                  style="filter: sepia(0.5) hue-rotate(180deg)"
+                />
+                <div
+                  class="absolute bottom-0 left-0 w-full p-6 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform"
+                >
+                  <h3
+                    class="font-prompt text-lg font-bold text-white mb-2 leading-tight drop-shadow-md"
+                  >
+                    เปิดโลกใหม่ RAN RENEWAL CLASSIC
+                  </h3>
+                  <div
+                    class="flex items-center gap-2 text-xs text-ran-gold font-prompt font-semibold uppercase tracking-widest bg-black/40 px-3 py-1.5 rounded w-max backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <span>รายละเอียด</span>
+                    <span>&rarr;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group cursor-pointer">
+              <div
+                class="relative h-72 rounded-2xl overflow-hidden border border-white/10 group-hover:border-ran-gold transition-all duration-500 shadow-xl group-hover:shadow-[0_0_30px_rgba(250,204,21,0.6)] group-hover:z-20 z-10"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-[#1A1625] via-transparent to-transparent z-10 opacity-90 group-hover:opacity-70 transition-opacity"
+                ></div>
+                <img
+                  src="./assets/card_news_1774046502289.png"
+                  alt="Event 3"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 saturate-150"
+                  style="filter: hue-rotate(45deg)"
+                />
+                <div
+                  class="absolute bottom-0 left-0 w-full p-6 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform"
+                >
+                  <h3
+                    class="font-prompt text-lg font-bold text-white mb-2 leading-tight drop-shadow-md"
+                  >
+                    รอการแจ้งอัพเดตเร็วๆนี้
+                  </h3>
+                  <div
+                    class="flex items-center gap-2 text-xs text-ran-gold font-prompt font-semibold uppercase tracking-widest bg-black/40 px-3 py-1.5 rounded w-max backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <span>รายละเอียด</span>
+                    <span>&rarr;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group cursor-pointer">
+              <div
+                class="relative h-72 rounded-2xl overflow-hidden border border-white/10 group-hover:border-ran-gold transition-all duration-500 shadow-xl group-hover:shadow-[0_0_30px_rgba(250,204,21,0.6)] group-hover:z-20 z-10"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-[#1A1625] via-transparent to-transparent z-10 opacity-90 group-hover:opacity-70 transition-opacity"
+                ></div>
+                <img
+                  src="./assets/card_news_1774046502289.png"
+                  alt="Event 4"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 saturate-150"
+                  style="filter: hue-rotate(-80deg)"
+                />
+                <div
+                  class="absolute bottom-0 left-0 w-full p-6 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform"
+                >
+                  <h3
+                    class="font-prompt text-lg font-bold text-white mb-2 leading-tight drop-shadow-md"
+                  >
+                    รอการแจ้งอัพเดตเร็วๆนี้
+                  </h3>
+                  <div
+                    class="flex items-center gap-2 text-xs text-ran-gold font-prompt font-semibold uppercase tracking-widest bg-black/40 px-3 py-1.5 rounded w-max backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <span>รายละเอียด</span>
+                    <span>&rarr;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer separated by brighter border -->
+      <footer
+        class="bg-[#0A0C14] pt-20 pb-10 px-6 md:px-12 border-t border-ran-gold/20 relative overflow-hidden"
+      >
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 relative z-10"
+        >
+          <div class="col-span-1">
+          <div
+            class="flex items-center gap-1.5 md:gap-2 mb-6"
+            style="filter: drop-shadow(0 2px 2px #000) drop-shadow(0 0 4px rgba(212,175,55,0.2));"
+          >
+            <span
+              class="font-cinzel text-lg font-bold tracking-[0.1em] text-transparent bg-clip-text bg-gradient-to-b from-[#fffae6] via-[#f59e0b] to-[#92400e] pr-0.5"
+            >
+              RAN
+            </span>
+            
+            <div class="relative flex items-center justify-center w-1.5 h-1.5 mx-0.5 mt-0.5">
+              <div class="absolute inset-0 bg-red-600 rounded-full blur-[1px]"></div>
+              <div class="w-1.5 h-1.5 rounded-full border border-red-500 bg-transparent relative z-10"></div>
+            </div>
+            
+            <span
+              class="font-cinzel text-lg font-bold tracking-[0.1em] text-transparent bg-clip-text bg-gradient-to-b from-[#fffae6] via-[#f59e0b] to-[#92400e] pl-0.5"
+            >
+              RENEWAL
+            </span>
+            <span class="text-[10px] text-blue-400 align-top ml-1 drop-shadow-none">&reg;</span>
+          </div>
+            <p
+              class="text-gray-400 text-sm leading-relaxed mb-8 font-light font-prompt"
+            >
+              แรนออนไลน์ระดับพรีเมียม
+              สัมผัสความสมจริงเหนือระดับและการต่อสู้ที่ไม่มีวันสิ้นสุด
+            </p>
+          </div>
+          <div class="text-sm font-prompt">
+            <h4
+              class="text-white font-medium mb-6 uppercase tracking-widest font-cinzel border-l-2 border-ran-gold pl-3"
+            >
+              Game
+            </h4>
+            <ul class="space-y-4 text-gray-400 font-light">
+              <li
+                class="hover:text-white cursor-pointer transition-colors block pl-3"
+              >
+                Download Client
+              </li>
+              <li
+                class="hover:text-white cursor-pointer transition-colors block pl-3"
+              >
+                Updates & Patches
+              </li>
+              <li
+                class="hover:text-white cursor-pointer transition-colors block pl-3"
+              >
+                Events
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm font-prompt">
+            <h4
+              class="text-white font-medium mb-6 uppercase tracking-widest font-cinzel border-l-2 border-blue-500 pl-3"
+            >
+              Community
+            </h4>
+            <ul class="space-y-4 text-gray-400 font-light">
+              <li
+                class="hover:text-white cursor-pointer transition-colors block pl-3"
+              >
+                Discord Server
+              </li>
+              <li
+                class="hover:text-white cursor-pointer transition-colors block pl-3"
+              >
+                Official Facebook
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm font-prompt">
+            <h4
+              class="text-white font-medium mb-6 uppercase tracking-widest font-cinzel border-l-2 border-purple-500 pl-3"
+            >
+              Support
+            </h4>
+            <ul class="space-y-4 text-gray-400 font-light">
+              <li
+                class="hover:text-white cursor-pointer transition-colors block pl-3"
+              >
+                Top Up
+              </li>
+              <li
+                class="hover:text-white cursor-pointer transition-colors block pl-3"
+              >
+                Terms of Service
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="max-w-7xl mx-auto flex flex-col items-center justify-center text-xs text-gray-500 uppercase tracking-widest relative z-10 pt-8 border-t border-white/5 font-prompt"
+        >
+          <p class="mb-2">© 2026 NEOX STUDIO. ALL RIGHTS RESERVED.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
