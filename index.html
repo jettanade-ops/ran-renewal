@@ -4,14 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RAN RENEWAL : Premium Classic</title>
-    <style>
-      html, body { background-color: #0F111A !important; color: #F3F4F6 !important; }
-      #navbar {
-        background-color: rgba(15, 17, 26, 0.3);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
-      }
-    </style>
+
     <link rel="icon" type="image/png" href="./assets/avatar.png" />
     <link rel="apple-touch-icon" href="./assets/avatar.png" />
     <!-- Google Fonts -->
@@ -29,7 +22,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body
-    style="background-color: #0F111A;"
+
     class="antialiased overflow-x-hidden selection:bg-ran-gold selection:text-black scroll-smooth"
   >
     <main class="w-full relative overflow-x-hidden">
@@ -252,6 +245,49 @@
               </span>
             </button>
           </div>
+
+          <!-- Server Status Bar -->
+          <div
+            class="mt-12 w-full max-w-3xl grid grid-cols-1 md:grid-cols-3 gap-0 border border-white/10 hover:border-ran-gold/30 rounded-2xl bg-white/[0.03] backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] relative z-10 animate-premium-reveal premium-delay-600 divide-y md:divide-y-0 md:divide-x divide-white/10 hover:shadow-[0_0_30px_rgba(250,204,21,0.15)] transition-all duration-700"
+          >
+            <!-- Server Status -->
+            <div class="py-4 px-4 flex flex-col items-center justify-center text-center group/item transition-colors">
+              <div class="flex items-center gap-1.5 mb-1.5 opacity-70 group-hover/item:opacity-100 transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.5)]"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+                <span class="text-[10px] text-gray-300 font-prompt tracking-[0.2em] relative top-[1px]">SERVER</span>
+              </div>
+              <div class="flex items-center gap-1.5 mb-2">
+                <span class="font-cinzel font-bold text-white text-sm tracking-wider drop-shadow-md">RENEWAL RAN : </span>
+                <span id="server-status" class="text-[9px] font-bold text-[#0F111A] bg-green-500 tracking-widest px-1.5 py-0.5 rounded shadow-[0_0_8px_rgba(34,197,94,0.6)]">ONLINE</span>
+              </div>
+              <!-- Online Count -->
+              <div class="flex items-center gap-1.5 text-[11px] text-ran-gold font-prompt bg-black/40 px-3 py-1 rounded-full border border-ran-gold/20 shadow-inner">
+                <div class="w-1.5 h-1.5 rounded-full bg-green-500 shadow-[0_0_5px_#22c55e] animate-pulse"></div>
+                <span>ออนไลน์: <span id="online-count" class="font-medium tracking-wide">กำลังโหลด...</span></span>
+              </div>
+            </div>
+
+            <!-- Gameplay -->
+            <div class="py-4 px-4 flex flex-col items-center justify-center text-center group/item transition-colors relative">
+              <div class="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-white/[0.03] to-transparent"></div>
+              <div class="flex items-center gap-1.5 mb-2 opacity-70 group-hover/item:opacity-100 transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FACC15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="drop-shadow-[0_0_5px_rgba(250,204,21,0.5)]"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                <span class="text-[10px] text-gray-300 font-prompt tracking-[0.2em] relative top-[1px]">GAMEPLAY</span>
+              </div>
+              <span class="font-cinzel font-bold text-ran-gold text-sm tracking-widest drop-shadow-[0_0_5px_rgba(250,204,21,0.3)] bg-gradient-to-b from-[#FACC15] to-[#B45309] text-transparent bg-clip-text">CLASSIC GAMEPLAY</span>
+            </div>
+
+            <!-- Level Cap -->
+            <div class="py-4 px-4 flex flex-col items-center justify-center text-center group/item transition-colors relative">
+               <div class="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-white/[0.03] to-transparent"></div>
+              <div class="flex items-center gap-1.5 mb-2 opacity-70 group-hover/item:opacity-100 transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="drop-shadow-[0_0_5px_rgba(239,68,68,0.5)]"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span class="text-[10px] text-gray-300 font-prompt tracking-[0.2em] relative top-[1px]">LEVEL CAP</span>
+              </div>
+              <span class="font-prompt font-bold text-white text-sm tracking-widest drop-shadow-md">Lv. 150</span>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -356,9 +392,7 @@
                 </p>
               </div>
             </div>
-            <!-- <a href="#" class="text-xs text-ran-gold-dark hover:text-ran-gold transition-all duration-300 inline-flex items-center gap-2 uppercase tracking-widest font-cinzel border border-ran-gold-dark/30 hover:border-ran-gold px-6 py-2 rounded-md bg-white/5 hover:bg-ran-gold/10 hover:shadow-[0_0_20px_rgba(250,204,21,0.5)]">
-                View Archive <span>&rarr;</span>
-            </a> -->
+
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -823,7 +857,7 @@
         <div
           class="max-w-7xl mx-auto flex flex-col items-center justify-center text-xs text-gray-500 uppercase tracking-widest relative z-10 pt-8 border-t border-white/5 font-prompt"
         >
-          <p class="mb-2">© 2026 NEOX STUDIO. ALL RIGHTS RESERVED.</p>
+          <p class="mb-2">© 2026 CODEVIBE STUDIO. ALL RIGHTS RESERVED.</p>
         </div>
       </footer>
     </main>
